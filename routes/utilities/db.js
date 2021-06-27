@@ -1,7 +1,7 @@
 const mongoClient = require('mongodb').MongoClient;
 let _db;
 const userName = process.env.MONGODBUSER;
-const password = process.env.MONGODVPSWD;
+const password = process.env.MONGODBPSWD;
 const mongoHost = process.env.MONGOHOST;
 const mongodb = process.env.MONGODB;
 const mongoUri = `mongodb+srv://${userName}:${password}@${mongoHost}/${mongodb}?retryWrites=true&w=majority`;
